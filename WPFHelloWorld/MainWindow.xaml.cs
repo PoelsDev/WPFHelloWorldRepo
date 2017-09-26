@@ -20,9 +20,18 @@ namespace WPFHelloWorld
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int clickCount;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void mijnKnop1_Click(object sender, RoutedEventArgs e)
+        {
+            mijnLabel.Content = "De wereldbol is een ruimteschip.";
+            mijnStatusLabel.Background = Brushes.Red;
+            clickCount = clickCount + 1;
+            mijnKnop1.Content = "Klik hier! [" + clickCount + "]";
         }
     }
 }

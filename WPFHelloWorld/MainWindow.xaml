@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="WPFHelloWorld" Height="350" Width="525">
     <Grid>
-        <Label x:Name="mijnLabel" Content="Hallo wereld! Ik ben Thibault." HorizontalAlignment="Left" Height="58" Margin="33,46,0,0" VerticalAlignment="Top" Width="184"/>
+        <Label x:Name="mijnLabel" Content="Hallo wereld! Ik ben Thibault." HorizontalAlignment="Left" Height="33" Margin="33,46,0,0" VerticalAlignment="Top" Width="420" Background="#FF00FF97" Foreground="White" FontFamily="Times New Roman" FontSize="18"/>
+        <Button x:Name="mijnKnop1" Content="Klik hier!" HorizontalAlignment="Left" Height="54" Margin="33,129,0,0" VerticalAlignment="Top" Width="139" Click="mijnKnop1_Click" Background="#FF8000FF" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="18"/>
+        <Label x:Name="mijnStatusLabel" Content="" HorizontalAlignment="Left" Height="54" Margin="340,129,0,0" VerticalAlignment="Top" Width="113" Background="#FFFDF200"/>
 
     </Grid>
 </Window>
